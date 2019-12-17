@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wyane Realty</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container">
             <nav class="nav">
                 <div class="nav__logo-container">
@@ -43,8 +46,10 @@
         <div class="container">
             <h1>Wyane Realty</h1>
             <form class="hero__search-form">
-                <label for="location">Enter Location to Search</label>
-                <input type="text" name="location" id="location" placeholder="Type any area, address, zip, etc.">
+                <div class="hero__form-group">
+                    <label for="location">Enter Location to Search</label>
+                    <input class="hero__search-form__location" type="text" name="location" id="location" placeholder="Type any area, address, zip, etc.">
+                </div>
                 <button class="btn">Search</button>
             </form>
         </div>
@@ -52,8 +57,97 @@
 
     <section class="featured-properties">
         <div class="container">
-            <div class="carousel__featured-properties">
+            <div class="carousel" id="featured-properties">
+                <button class="carousel__button carousel__button--left"><ion-icon name="arrow-round-back"></ion-icon></button>
+                
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__card">
+                                <img src="./assets/properties/house1.jpg" alt="" class="carousel__card__image">
+                                <p>The Strand</p>
+                                <h1 class="carousel__card__price">$1,236,887</h1>
+                                <p>
+                                    <span class="card-info-number">1 </span>un
+                                    <span class="card-info-number">5 </span>bd
+                                    <span class="card-info-number">4 </span>ba
+                                    <span class="card-info-number">3657 </span>sqt
+                                    <br>
+                                    Listed 4 Days Ago
+                                </p>
+                            </div>
+                            <div class="carousel__card">
+                                <img src="./assets/properties/house2.jpg" alt="" class="carousel__card__image">
+                                <p>The Strand</p>
+                                <h1 class="carousel__card__price">$1,236,887</h1>
+                                <p>
+                                    <span class="card-info-number">1 </span>un
+                                    <span class="card-info-number">5 </span>bd
+                                    <span class="card-info-number">4 </span>ba
+                                    <span class="card-info-number">3657 </span>sqt
+                                    <br>
+                                    Listed 4 Days Ago
+                                </p>
+                            </div>
+                            <div class="carousel__card">
+                                <img src="./assets/properties/house3.jpg" alt="" class="carousel__card__image">
+                                <p>The Strand</p>
+                                <h1 class="carousel__card__price">$1,236,887</h1>
+                                <p>
+                                    <span class="card-info-number">1 </span>un
+                                    <span class="card-info-number">5 </span>bd
+                                    <span class="card-info-number">4 </span>ba
+                                    <span class="card-info-number">3657 </span>sqt
+                                    <br>
+                                    Listed 4 Days Ago
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel__slide current-slide">
+                            <div class="carousel__card">
+                                <img src="./assets/properties/house4.jpg" alt="" class="carousel__card__image">
+                                <p>The Strand</p>
+                                <h1 class="carousel__card__price">$1,236,887</h1>
+                                <p>
+                                    <span class="card-info-number">1 </span>un
+                                    <span class="card-info-number">5 </span>bd
+                                    <span class="card-info-number">4 </span>ba
+                                    <span class="card-info-number">3657 </span>sqt
+                                    <br>
+                                    Listed 4 Days Ago
+                                </p>
+                            </div>
+                            <div class="carousel__card">
+                                <img src="./assets/properties/house5.jpg" alt="" class="carousel__card__image">
+                                <p>The Strand</p>
+                                <h1 class="carousel__card__price">$1,236,887</h1>
+                                <p>
+                                    <span class="card-info-number">1 </span>un
+                                    <span class="card-info-number">5 </span>bd
+                                    <span class="card-info-number">4 </span>ba
+                                    <span class="card-info-number">3657 </span>sqt
+                                    <br>
+                                    Listed 4 Days Ago
+                                </p>
+                            </div>
+                            <div class="carousel__card">
+                                <img src="./assets/properties/house6.jpg" alt="" class="carousel__card__image">
+                                <p>The Strand</p>
+                                <h1 class="carousel__card__price">$1,236,887</h1>
+                                <p>
+                                    <span class="card-info-number">1 </span>un
+                                    <span class="card-info-number">5 </span>bd
+                                    <span class="card-info-number">4 </span>ba
+                                    <span class="card-info-number">3657 </span>sqt
+                                    <br>
+                                    Listed 4 Days Ago
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
+                <button class="carousel__button carousel__button--right"><ion-icon name="arrow-round-forward"></ion-icon></button>
             </div>
             <div class="info-card">
                 <h1>Visit Us At Our Upcoming Open Houses</h1>
@@ -109,6 +203,12 @@
                     <a href="#" class="realtor__social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
                 </div>
             </div>
+        </div>
+    </section> <!-- END REALTOR SECTION -->
+
+    <section class="other-properties">
+        <div class="container">
+
         </div>
     </section>
 

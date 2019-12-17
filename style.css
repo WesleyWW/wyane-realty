@@ -47,8 +47,30 @@ h4 {
     font-size: 1.6rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     width: 100%;
+}
+
+button { 
+    cursor: pointer;
+}
+
+.btn {
+    padding: .6rem;
+    background: var(--main-color);
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .main-header {
@@ -60,6 +82,7 @@ img {
 }
 
 .container {
+    margin: auto;
     padding: 1rem 1.2rem;
     width: 100%;
     max-width: 1068px;
@@ -100,12 +123,12 @@ img {
 .hero {
     height: 100vh;
     width: 100%;
-    background: url('./assets/home-images/culdesac-overview.jpg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)), url('./assets/home-images/culdesac-overview.jpg') no-repeat center;
     background-size: cover;
 }
 
 .hero > .container {
-    background: rgba(0,0,0, 0.4);
+    
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -131,14 +154,114 @@ img {
     border-bottom: 2px solid var(--main-color);
 }
 
-/* 
-.hero__search-form__group {
-
-    
-} */
-
 .hero__search-form input {
     margin: 0 2rem 0 0.4rem;
     padding: .5rem;
     height: 3rem;
 }
+
+/* FEATURED PROPERTIES CARUOSEL */
+.featured-properties {
+    height: 100vh;
+    width: 100%;
+    background: #dddddd;
+}
+
+.carousel {
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel__button ion-icon {
+    font-size: 25px;
+}
+
+.carousel__button--left {
+    left: 10px;
+}
+
+.carousel__button--right {
+    right: 10px;
+}
+
+.carousel__track-container {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.carousel__track {
+    height: 100%;
+    position: relative;
+}
+
+.carousel__slide {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+
+.carousel__card {
+    padding: 1rem;
+    width: 30%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.carousel__card:hover {
+    background: #cccccc;
+}
+
+.carousel__card img{
+    height: 180px;
+    object-fit: cover;
+}
+
+.carousel__card__price {
+    margin: .5rem 0;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.card-info-number {
+    font-weight: bold;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__dot {
+    margin: 0 15px;
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.carousel__dot.current-slide {
+    background: rgba(0,0,0,0.75);
+}
+

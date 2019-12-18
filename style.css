@@ -12,7 +12,6 @@
     --accent-color: #ddd;
     --header-font: 'PT Sans Narrow', sans-serif;
     --standard-text: 'Roboto', sans-serif;
-
     font-size: 10px;
 }
 
@@ -21,6 +20,8 @@ body {
     width: 100%;
     background-color: var(--main-bg-color);
     font-family: var(--standard-text);
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 h1,
@@ -59,6 +60,10 @@ button {
     cursor: pointer;
 }
 
+.main-color {
+    color: var(--main-color);
+}
+
 .btn {
     padding: .6rem;
     background: var(--main-color);
@@ -82,12 +87,11 @@ button {
 }
 
 .container {
-    margin: auto;
+    margin: 0 auto;
     padding: 1rem 1.2rem;
+    height: 100%;
     width: 100%;
     max-width: 1068px;
-    max-width: 1;
-    height: 100%;
     position: relative;
 }
 
@@ -162,15 +166,20 @@ button {
 
 /* FEATURED PROPERTIES CARUOSEL */
 .featured-properties {
-    height: 100vh;
+    padding: 2.5rem 0 2rem 0;
+    min-height: 100vh;
     width: 100%;
-    background: #dddddd;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
+
 .carousel {
-    position: relative;
-    height: 50%;
+    margin: .5rem 0;
+    height: 400px;
     width: 100%;
+    position: relative;
 }
 
 .carousel__button {
@@ -198,11 +207,14 @@ button {
     margin: auto;
     width: 90%;
     height: 100%;
+    position: relative;
 }
 
 .carousel__track {
+    width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
 }
 
 .carousel__slide {
@@ -219,8 +231,6 @@ button {
 .carousel__card {
     padding: 1rem;
     width: 30%;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
     color: #333;
     border-radius: 6px;
     cursor: pointer;
@@ -246,9 +256,12 @@ button {
 }
 
 .carousel__nav {
+    margin: 2rem 0;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .carousel__dot {
@@ -264,4 +277,95 @@ button {
 .carousel__dot.current-slide {
     background: rgba(0,0,0,0.75);
 }
+/* END FEATURED PROPERTIES CAROUSEL */
 
+/* START FEATURED PROPERTIES OPEN HOUSES */
+.info-cards {
+    margin: 4rem auto 1rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    bottom: 2px;
+}
+
+.info-cards h1 {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.info-card {
+    margin: 1rem;
+    padding: .5rem;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    background: #ffffff;
+    border-radius: 5px;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    text-align: left;
+}
+
+.info-card img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.info-card__house-info {
+    right: 0;
+}
+/* END FEATURED PROPERTIES */
+
+/* REALTOR INFORMATION */
+.realtor {
+    height: 100vh;
+    width: 100%;
+}
+
+.realtor .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.realtor__agent,
+.realtor__connect {
+    padding: 1rem;
+    height: 45%;
+    width: 45%;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.realtor__agent__info {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: initial;    
+}
+
+.realtor__agent__info img {
+    height: 150px;
+    width: 40%;
+    object-fit: cover;
+}
+
+.realtor__agent__info-text {
+    width: 60%;
+}
+
+.realtor__connect__social-links {
+    text-align: center;
+}
+
+.realtor__social-link {
+    font-size: 3rem;
+    margin: 0 2rem;
+}

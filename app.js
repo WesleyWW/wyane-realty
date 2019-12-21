@@ -63,3 +63,32 @@ carouselNav.addEventListener('click', e => {
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
 })
+
+//Menu Button Toggle
+const menuBtn = document.querySelector('.menu-btn');
+const lines = menuBtn.querySelectorAll('.btn-line');
+const backdrop = document.querySelector('.nav__backdrop');
+const navMenu = document.querySelector('.nav__menu');
+
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+backdrop.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    if(!showMenu) {
+        menuBtn.classList.add('close');
+        lines.forEach(line => line.classList.add('close'));
+        backdrop.classList.add('show');
+        navMenu.classList.add('show');
+        //set menu state to show
+        showMenu = true;
+    } else {
+        menuBtn.classList.remove('close');
+        lines.forEach(line => line.classList.remove('close'));
+        backdrop.classList.remove('show');
+        navMenu.classList.remove('show');
+        //set menu state to show
+        showMenu = false;
+    }
+}

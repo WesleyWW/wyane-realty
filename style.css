@@ -8,7 +8,7 @@
 
 :root {
     --main-bg-color: #eeeeee;
-    --main-color: rgb(40, 184, 148);
+    --main-color: #28b894;
     --accent-color: #ddd;
     --header-font: 'PT Sans Narrow', sans-serif;
     --standard-text: 'Roboto', sans-serif;
@@ -184,6 +184,7 @@ ul {
     color: #333;
 }
 /* End Header Styles */
+
 
 /* HERO STYLES */
 .hero {
@@ -484,16 +485,16 @@ ul {
 }
 
 .diversify-option#worldwide {
-    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)), url('/assets/home-images/diversify-options1.jpeg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)), url('./assets/home-images/diversify-options1.jpeg') no-repeat center;
     background-size: cover;
     
 }
 .diversify-option#commercial {
-    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)),url('/assets/home-images/diversify-options2.jpeg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)),url('./assets/home-images/diversify-options2.jpeg') no-repeat center;
     background-size: cover;
 }
 .diversify-option#luxury {
-    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)),url('/assets/home-images/diversify-options3.jpeg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)),url('./assets/home-images/diversify-options3.jpeg') no-repeat center;
     background-size: cover;
 }
 /* END OTHER PROPERTIES DIVERSIFY OPTIONS */
@@ -511,7 +512,7 @@ ul {
 .find-agent__text {
     height: 300px;
     max-width: 750px;
-    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)),url('/assets/home-images/bg-find-agent.jpeg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.6)),url('./assets/home-images/bg-find-agent.jpeg') no-repeat center;
     background-size: cover;
     color: #ffffff;
     display: flex;
